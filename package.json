@@ -1,0 +1,25 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "delete": "node src/clean.js",
+    "start": "npm run delete && npx tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cls-mongoose": "2.0.1",
+    "mongo-uri-builder": "^2.0.0",
+    "mongoose": "5.10.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.85",
+    "@types/mocha": "5.2.7",
+    "@types/node": "10.0.0",
+    "typescript": "^3.6.4"
+  }
+}
